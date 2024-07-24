@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <article class="mobileChat">
+          <section class="profile">
+            <div>
+              <img class="svg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAa0lEQVR4nO3WMQ6AIAxG4V4Covc/iYtG46SDx3mGwKKTg5SB/xtZXtI0DWYiHwERmIHJnKMn2eoVDcBRohcwKPobjbcqutneBNhLNB2JaF5oGA6vUY+KV4fGnmnhmnx9NqfsI54u3FKepHM3RgZsR2fwzTAAAAAASUVORK5CYII=">
+
+            </svg>              
+              <img src="./images/avatar.jpg" alt="profile pic" class="profilePic" />
+            </div>
+            <div class="name">
+              <h2>Samuel Green</h2>
+              <p>Available to Walk</p>
+            </div>
+            <div>
+              <img class="svg"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkElEQVR4nO2WUQqEMAxEgydQL+WeSoqX1r+3BAuCWP0xgV3mQaHQjw6TZIjZrwKMwKeeIfPjDliAjYMVKP6WIWChTcmwfbsRsIaWg73eT0x/LWCoNt+VoA8T4NRubzFb0hiWkxN+n1PG8FQO74kp3PYrlIQNlISOkrC3SFASVpSEaCe8Rjuho50wFrQT2rt8ASj5fG9/bKWqAAAAAElFTkSuQmCC">
+
+
+
+            </div>
+          </section>
+          <section class="chats">
+            <ul>
+              <li>
+                <p>That sounds great. I’d be happy with that.</p>
+              </li>
+              <li>
+                <p>Could you send over some pictures of your dog, please?</p>
+              </li>
+              <ul class="response">
+                <li>
+                  <img src="./images/dog-image-1.jpg" alt="dog" /><img
+                    src="./images/dog-image-2.jpg"
+                    alt="dog"
+                  /><img src="./images/dog-image-3.jpg" alt="dog" />
+                </li>
+                <li>
+                  <p>Here are a few pictures. She’s a happy girl!</p>
+                </li>
+                <li>
+                  <p>Can you make it?</p>
+                </li>
+              </ul>
+              <li>
+                <p>
+                  She looks so happy! The time we discussed works. How long
+                  shall I take her out for?
+                </p>
+              </li>
+              <ul class="price">              
+                <li >
+                <input type="checkbox" name="" id="" />
+                <p>30 minute walk</p>
+                <span>$29</span>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="" />
+                <p>1 hour walk</p>
+                <span>$49</span>
+              </li>
+            </ul>
+
+            </ul>        
+            <div class="sendBtn"><input type="text" placeholder="Type a message…" />
+              <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2ZS09TQRTHb6I78UvQmbZWg3s606sLVyILOqeQiF9A4wuXbtSlVCHGRFQkLnwgEhMTKkoUIfGBCVIV8Uu0miAbsYZrzi0VkVI7r1sW959MQlJy7/83M+fMmXMdJ1SoUKFQSZrZy6LQwymMcAIfORXfOBE//VH++wP+xgicxv91toJaY+07U1ScYUR84RQ8ybGAwG4CmgI37rrudpxJTuCrgvF1gxEociJO4TODMR/tiHMCeV3jG0AozLXGIGbVfCoC7YzAkmnzvDIIfE+SzCEr5lkEjjACJWvm6Z8tVWIEum3MvHXzfB1Eus2M+eYOiksblHm+BrGE8aZlHjODbMCePdrr3ewbNhTY4r1WdvJTpYz5Y1mvVPrloQb7zUCkCJxUMn+gpXsHI6KgYr4iEyvBCBTxwJQGwBNW5kUvcq+9ahrI3tWHiEKPNIBseeDGO73nY6+qQty4dE8XYkHKPBZbKi+qBXE9qwfhNmf2WNs+9UIM9N4JJpg5lsQ6s1UD4tpFNQhGYLhuAEbgk27gbQaxsrLi9V8Ykn8mgbwMQFEXAMf+XV3e9MS7qhB9529JroAo1L+FCCybAPgfxOVzg/UDUPjREAAct6+OVo2Hx/cn7ACY2kI4hq6MVDU/9nDSc2MZO1vIRBDXMp8blTPPZYNYN43WMj/+aErePJVNo+X2iHHzWC9helV5JqNwQgIg3WLa/GTujbcv3qU8KclIenfdAD4EFfPGzD/RM89lizmVbbSZ+Zfjb3XNe3ixsn6hwULtX009nTFhvqjcvcOOmczL/oaYfjbjn8I65nn5Xnzc0WohUpiThTBlnlOYBQe2KQP4EBEgnIpFmRer5Hluo61SEbb7gm5scQoHHZPCdl9QrUVOxGGj5tcg0m12u3Ri0fjMb4CId0axY2YBYBbbmE4QwuyEl2wTZTcjooCpUjvbKIEkoGn1xP4sbZyKeTxhG/KJqZqw2PJXhYoHfkMYPz/hzY7AcvkzEuSxJF5duUSj/YYKFcrZGvoNY9bEQTIsDvUAAAAASUVORK5CYII=">
+
+              </button>
+            </div>    
+
+          </section>
+
+        </article>
+        <article class="description">
+          <h1>Simple booking</h1>
+          <p>
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
